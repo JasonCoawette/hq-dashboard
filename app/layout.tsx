@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={geistSans.className}>
       <head>
-        <title>{metadata.title}</title>
+        <meta name="title" content={metadata.title} />
         <meta name="description" content={metadata.description} />
       </head>
       <body>
