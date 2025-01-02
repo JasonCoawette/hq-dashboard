@@ -1,9 +1,12 @@
+import Card from "./components/Card";
+import Icon from "./components/Icon";
 
-export default async function Home() {
+export default function Home() {
   return (
-    <>
-      <h1>Hello World</h1>
-      
-    </>
+    <div className="flex flex-col justify-start h-screen bg-primaryBG gap-[12px] sm:gap-[24px] p-[12px] sm:p-[24px] ">
+      <Card title="Downloads" icon={<Icon name="downloads" />}>
+        <div></div>
+      </Card>
+    </div>
   );
 }

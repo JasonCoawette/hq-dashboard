@@ -9,8 +9,8 @@ const defaultUrl = process.env.VERCEL_URL
 // Metadata configuration
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "HQ Dashboard",
-  description: "My global dashboard for all my projects",
+  title: "Stratus HQ Dashboard",
+  description: "All IOS products for Stratus Ventures",
 };
 
 // Font configurations

@@ -19,39 +19,24 @@ const config = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        primaryFG: "#FFFFFF",
+        secondaryFG: "rgba(255, 255, 255, 0.8)",
+        tertiaryFG: "rgba(255, 255, 255, 0.48)",
+        stroke: "rgba(255, 255, 255, 0.16)",
+        primaryBG: "#080808",
+        secondaryBG: "#161616",
+        icon: "#484848",
+        pink: "#EE00FF",
+        green: "#43E660",
+        blue: "#00BBFF",
+        negativeRed: "#E64346",
+        cellLow: "rgba(255, 255, 255, 0.08)",
+        cellMiddleLow: "rgba(67, 230, 96, 0.16)",
+        cellMiddle: "rgba(67, 230, 96, 0.32)",
+        cellMiddleHigh: "rgba(67, 230, 96, 0.64)",
+        cellHigh: "#43E660",
+        positiveGreenBG: "rgba(67, 230, 96, 0.32)",
+        negativeRedBG: "rgba(230, 67, 70, 0.32)",
       },
       borderRadius: {
         lg: "var(--radius)",
