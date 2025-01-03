@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Geist', 'Inter', sans-serif;
 }

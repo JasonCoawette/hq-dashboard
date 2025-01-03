@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
+import H2 from "./H2";
+
 
 type CardProps = {
   title: string;
@@ -12,12 +14,12 @@ export default function Card({ title, icon, className, children }: CardProps) {
   return (
     <div 
       className={cn(
-        "flex flex-col gap-y-[12px] sm:gap-y-[16px] rounded-[8px] border-stroke bg-secondaryBG text-primaryFG shadow-sm p-[12px] sm:p-[24px]",
+        "flex flex-col justify-start items-center p-[12px] sm:p-[16px] lg:p-[24px] rounded-[4px] sm:rounded-[6px] lg:rounded-[8px] border border-stroke bg-gradient-to-b from-secondaryBG to-primaryBG",
         className
       )}
     >
-        <div className="flex flex-row justify-between items-center">
-            <h1 className="text-[16px] sm:text-[24px] font-geist font-medium tracking-[-0.02em] leading-none">{title}</h1>
+        <div className="w-full flex flex-row justify-between items-center">
+            <H2 label={title} />
             {icon}
         </div>
         {children}
