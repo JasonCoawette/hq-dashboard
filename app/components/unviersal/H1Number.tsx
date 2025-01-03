@@ -8,8 +8,7 @@ export default function H1Number({ number, color = 'primaryFG' }: { number: numb
       <NumberFlow
         value={number}
         format={{ useGrouping: true }}
-        className="h-fit"
-        style={{ fontVariantNumeric: 'tabular-nums' }}
+        className="inline-block font-tabular-nums"
         transformTiming={{ duration: 700, easing: 'linear' }}
         spinTiming={{ duration: 700, easing: 'linear' }}
         opacityTiming={{ duration: 350, easing: 'ease-out' }}
