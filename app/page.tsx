@@ -1,13 +1,13 @@
-import Card from "./components/unviersal/Card";
-import H1Number from "./components/unviersal/H1Number";
-import Icon from "./components/unviersal/Icon";
+import DownloadsCard from "./components/downloads-n-created-users/DownloadsCard";
+import CreatedUsersCard from "./components/downloads-n-created-users/CreatedUsersCard";
 
 export default function HomeClient() {
   return (
-    <div className="flex flex-col justify-start h-screen bg-primaryBG gap-[12px] sm:gap-[16px] p-[12px] sm:p-[16px]">
-      <Card title="Downloads" icon={<Icon name="downloads" />} className="gap-[6px] lg:gap-[8px]">
-        <H1Number number={1000} color="primaryFG" />
-      </Card>
+    <div className="w-full flex flex-col justify-start h-screen bg-primaryBG gap-[12px] sm:gap-[16px] p-[12px] sm:p-[16px]">
+      <div className="w-full flex flex-row gap-x-[64px] items-center">
+        <DownloadsCard />
+        <CreatedUsersCard />
+      </div>
     </div>
   );
 }
