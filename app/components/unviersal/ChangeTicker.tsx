@@ -16,7 +16,7 @@ export default function ChangeTicker({ number, timeframe, isPositive }: ChangeTi
         <Icon name={iconName} />
         <NumberFlow
             value={number}
-            format={{ style: 'currency', currency: 'USD', useGrouping: true }}
+            format={{ useGrouping: true }}
             className={`text-[10px] sm:text-[12px] lg:text-[16px] font-geist font-normal ${color}`}
             transformTiming={{ duration: 400, easing: 'linear' }}
             spinTiming={{ duration: 400, easing: 'linear' }}

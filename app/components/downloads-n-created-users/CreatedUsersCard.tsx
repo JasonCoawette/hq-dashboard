@@ -1,15 +1,31 @@
-import Card from "../unviersal/Card";
-import Icon from "../unviersal/Icon";
-import H1Number from "../unviersal/H1Number";
-import ChangeTicker from "../unviersal/ChangeTicker";
+'use client';
 
-export default function DownloadsCard() {
-    return (
-        <Card title="Created Users" icon={<Icon name="users" />} className="w-full">
-          <div className="w-full flex flex-col items-start">
-            <H1Number number={4000} color="primaryFG" />
-            <ChangeTicker number={1234} timeframe="Since last year" isPositive={true} />
-          </div>
-        </Card>
-    )
+import { useState, useEffect } from 'react';
+import Card from '../unviersal/Card';
+import Icon from '../unviersal/Icon';
+import H1Number from '../unviersal/H1Number';
+import ChangeTicker from '../unviersal/ChangeTicker';
+
+export default function CreatedUsersCard() {
+  const [users, setUsers] = useState(4000);
+  const [change, setChange] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const randomChange = Math.floor(Math.random() * 100 - 50);
+      setUsers((prev) => prev + randomChange);
+      setChange(randomChange);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <Card title="Created Users" icon={<Icon name="users" />} className="w-full">
+      <div className="w-full flex flex-col items-start">
+        <H1Number number={users} color="primaryFG" />
+        <ChangeTicker number={change} timeframe="Since last year" isPositive={change >= 0} />
+      </div>
+    </Card>
+  );
 }
