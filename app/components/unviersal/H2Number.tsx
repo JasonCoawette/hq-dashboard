@@ -1,7 +1,14 @@
+import NumberFlow from '@number-flow/react';
+
 export default function H2Number({ number, color = 'primaryFG' }: { number: number; color?: string }) {
-    return (
-      <h2 className={`text-[24px] sm:text-[32px] md:text-[48px] font-geist font-regular font-normal leading-none tracking-[-0.04em] self-stretch text-${color}`}>
-        {number}
-      </h2>
-    );
-  }
+  return (
+    <NumberFlow
+      value={number}
+      format={{ useGrouping: true }}
+      className={`text-[24px] sm:text-[32px] md:text-[48px] font-geist font-normal leading-none tracking-[-0.04em] self-stretch text-${color}`}
+      transformTiming={{ duration: 400, easing: 'linear' }}
+      spinTiming={{ duration: 400, easing: 'linear' }}
+      opacityTiming={{ duration: 200, easing: 'ease-out' }}
+    />
+  );
+}

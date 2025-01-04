@@ -16,11 +16,11 @@ export default function ChangeTicker({ number, timeframe, isPositive }: ChangeTi
         <Icon name={iconName} />
         <NumberFlow
             value={number}
-            format={{ useGrouping: true }}
+            format={{ style: 'currency', currency: 'USD', useGrouping: true }}
             className={`text-[10px] sm:text-[12px] lg:text-[16px] font-geist font-normal ${color}`}
-            transformTiming={{ duration: 700, easing: 'linear' }}
-            spinTiming={{ duration: 700, easing: 'linear' }}
-            opacityTiming={{ duration: 350, easing: 'ease-out' }} 
+            transformTiming={{ duration: 400, easing: 'linear' }}
+            spinTiming={{ duration: 400, easing: 'linear' }}
+            opacityTiming={{ duration: 200, easing: 'ease-out' }}
         />
         </div>
         <span className="text-secondaryFG">{timeframe}</span>
