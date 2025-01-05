@@ -23,7 +23,7 @@ export default function DownloadsCard() {
   return (
     <Card title="Downloads" icon={<Icon name="downloads" />} className="w-full">
       <div className="w-full flex flex-col items-start">
-        <H1Number number={downloads} color="primaryFG" />
+        <H1Number number={downloads}/>
         <ChangeTicker number={change} timeframe="Today so far" isPositive={change >= 0} />
       </div>
     </Card>

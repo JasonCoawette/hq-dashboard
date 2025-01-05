@@ -1,4 +1,5 @@
-import { Geist } from "next/font/google";
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import "./globals.css";
 
 // Default URL for metadata
@@ -10,21 +11,9 @@ const defaultUrl = process.env.VERCEL_URL
 export const metadata = {
   metadataBase: new URL(defaultUrl),
   title: "Stratus HQ Dashboard",
-  description: "All IOS products for Stratus Ventures",
+  description: "Dashboard for all IOS products for Stratus Ventures",
 };
 
-// Font configurations
-const geistSans = Geist({
-  display: "swap",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const geistMono = Geist({
-  display: "swap",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 export default function RootLayout({
   children,
@@ -32,12 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={geistSans.className}>
+    <html lang="en" className={GeistSans.className}>
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </head>
-      <body>
+      <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
       </body>
     </html>

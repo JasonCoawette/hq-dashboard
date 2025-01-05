@@ -18,11 +18,13 @@ export default function Card({ title, icon, className, children }: CardProps) {
         className
       )}
     >
-        <div className="w-full flex flex-row justify-between items-center">
+        <div className="w-full flex flex-row items-start justify-between">
             <H2 label={title} />
             {icon}
         </div>
-        {children}
+        <div className="flex flex-col justify-center items-center self-stretch p-[16px] rounded-[8px] bg-secondaryBG">
+          {children}        
+        </div>
     </div>
   );
 }

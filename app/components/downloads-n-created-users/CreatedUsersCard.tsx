@@ -23,7 +23,7 @@ export default function CreatedUsersCard() {
   return (
     <Card title="Created Users" icon={<Icon name="users" />} className="w-full">
       <div className="w-full flex flex-col items-start">
-        <H1Number number={users} color="primaryFG" />
+        <H1Number number={users}/>
         <ChangeTicker number={change} timeframe="Since last year" isPositive={change >= 0} />
       </div>
     </Card>
