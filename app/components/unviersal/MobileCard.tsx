@@ -14,12 +14,12 @@ export default function Card({ title, icon, className, children }: CardProps) {
   return (
     <div 
       className={cn(
-        "flex flex-col justify-center items-center gap-[16px] self-stretch",
+        "flex flex-col justify-center items-center gap-[16px] px-[8px] self-stretch",
         className
       )}
     >
-        <H2 label={title} className="w-full"/>
-        <div className="flex flex-col justify-center items-center self-stretch p-[16px] rounded-[8px] bg-secondaryBG">
+        <H2 className="w-full">{title}</H2>
+        <div className="flex flex-col justify-center items-center self-stretch px-[16px] pt-[8px] pb-[16px] rounded-[8px] bg-secondaryBG">
           {children}        
         </div>
     </div>

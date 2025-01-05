@@ -18,7 +18,7 @@ export default function ChangeTicker({ number, timeframe, isPositive }: ChangeTi
           <Icon name={iconName}/>
           <H3Number number={number} color={color}/>
         </div>
-        <H3 label={timeframe} color='text-secondaryFG'/>
+        <H3 className='text-secondaryFG'>{timeframe}</H3>
     </div>
   );
 }

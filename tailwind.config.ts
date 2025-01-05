@@ -29,6 +29,7 @@ const config = {
         stroke: "rgba(255, 255, 255, 0.16)",
         primaryBG: "#080808",
         secondaryBG: "#161616",
+        tertiaryBG: "#242424",
         icon: "#484848",
         pink: "#EE00FF",
         green: "#43E660",
@@ -44,7 +45,21 @@ const config = {
       }
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }: { addUtilities: (utilities: Record<string, any>) => void }) {
+      addUtilities({
+        '.hide-scrollbar': {
+          /* Hide scrollbar for Chrome, Safari, and Opera */
+          '-webkit-overflow-scrolling': 'touch',
+          'scrollbar-width': 'none', /* Firefox */
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+        },
+      });
+    },
+  ],
 } satisfies Config;
 
 export default config;

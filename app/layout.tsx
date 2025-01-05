@@ -25,6 +25,7 @@ export default function RootLayout({
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={`${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
