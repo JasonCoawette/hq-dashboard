@@ -11,3 +11,14 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+
+// FINANCE UTILS
+
+export function formatCurrency(value: number): string {
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value);
+}
+
+
+export function calculateCashFlow(revenue: number, expenses: number): number {
+  return revenue - expenses;
+}

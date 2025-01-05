@@ -1,6 +1,7 @@
 import Icon from "../unviersal/Icon";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import H3Number from "../unviersal/H3Number";
 
 type TrafficSourceItemProps = {
     title: string;
@@ -16,11 +17,11 @@ export default function TrafficSourceItem({title, url, topProduct, visits, conve
         <div className={cn("w-fit flex flex-col justify-start items-center justify-between gap-y-[8px] p-[16px] self-stretch bg-secondaryBG rounded-[8px]", className)}> {/* change bg to tertiary for desktop */}
             {/* Link and top product */}
             <div className="w-full flex flex-col items-start gap-y-[4px] self-stretch">
-                <Link href={url} target="_blank" rel="noopener noreferrer" className="font-mono text-[16px] text-blue font-bold leading-tight underline underline-offset-4 decoration-blue">{title}</Link>
+                <Link href={url} target="_blank" rel="noopener noreferrer" className="font-mono text-[12px] text-blue font-bold leading-tight  tracking-[-0.02em] underline underline-offset-4 decoration-blue">{title}</Link>
 
                 <div className="w-full flex flex-row items-center gap-x-[8px]">
-                    <span className="font-mono text-[16px] font-regular leading-normal text-tertiaryFG">Top Product:</span>
-                    <span className="font-mono text-[16px] font-medium leading-normal text-primaryFG">{topProduct}</span> 
+                    <span className="font-mono text-[12px] font-regular leading-normal tracking-[-0.02em] text-tertiaryFG">Top product:</span>
+                    <span className="font-mono text-[12px] font-medium leading-normal tracking-[-0.02em] text-primaryFG">{topProduct}</span> 
                 </div>
             </div>
 
@@ -30,7 +31,7 @@ export default function TrafficSourceItem({title, url, topProduct, visits, conve
                 <div className="w-fit h-fit flex flex-row items-center gap-x-[4px]">
                     <Icon name="visits"/>
                     <div className="flex flex-col items-start pt-[2px]">
-                        <h4 className="font-mono text-[16px] font-medium leading-normal text-secondaryFG">{visits}</h4>
+                        <H3Number number={visits} className="text-[12px] text-secondaryFG" />
                     </div>
                 </div>
 
@@ -38,7 +39,7 @@ export default function TrafficSourceItem({title, url, topProduct, visits, conve
                 <div className="w-fit h-fit flex flex-row items-center gap-x-[4px]">
                     <Icon name="percent"/>
                     <div className="flex flex-col items-start pt-[2px]">
-                        <h4 className="font-mono text-[16px] font-medium leading-normal text-secondaryFG">{conversionRate}</h4>
+                        <H3Number number={conversionRate} className="text-[12px] text-secondaryFG" />
                     </div>
                 </div>
             </div>
