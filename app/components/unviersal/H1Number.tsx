@@ -1,4 +1,5 @@
 import NumberFlow from '@number-flow/react'
+import { cn } from '@/lib/utils'
 
 export default function H1Number({ number, color = 'text-primaryFG' }: { number: number; color?: string }) {
   return (
