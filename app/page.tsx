@@ -6,7 +6,7 @@ import DailyActiveUsersCard from "./components/daily-active-users/DailyActiveUse
 
 export default function Home() {
   return (
-    <div className="w-full h-fit flex flex-col justify-start bg-primaryBG gap-y-[32px] p-[8px]">
+    <div className="w-full h-fit flex flex-col justify-start gap-y-[32px]">
       <DailyActiveUsersCard />
       <DownloadsCard />
       <CreatedUsersCard />

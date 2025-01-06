@@ -2,29 +2,29 @@ import H2 from "../unviersal/H2";
 import TrafficSourceItem from "./TrafficSourceItem";
 
 const trafficSources = [
-    {
-        title: 'Appstore',
+    { 
+        title: 'Apple Appstore',
         url: 'https://apple.com/appstore',
         topProduct: 'Product A',
         visits: 1200,
         conversionRate: 15,
     },
     {
-        title: 'Instagram',
+        title: 'Instagram.com',
         url: 'https://instagram.com',
         topProduct: 'Product B',
         visits: 800,
         conversionRate: 10,
     },
     {
-        title: 'Facebook',
+        title: 'Facebook.com',
         url: 'https://facebook.com',
         topProduct: 'Product C',
         visits: 1200,
         conversionRate: 15,
     },
     {
-        title: 'Google',
+        title: 'Google.com',
         url: 'https://google.com',
         topProduct: 'Product C',
         visits: 1200,
@@ -38,21 +38,21 @@ const trafficSources = [
         conversionRate: 15,
     },
     {
-        title: 'Pinterest',
+        title: 'Pinterest.com',
         url: 'https://pinterest.com',
         topProduct: 'Product C',
         visits: 1200,
         conversionRate: 15,
     },
     {
-        title: 'Tiktok',
+        title: 'Tiktok.com',
         url: 'https://tiktok.com',
         topProduct: 'Product C',
         visits: 1200,
         conversionRate: 15,
     },
     {
-        title: 'Youtube',
+        title: 'Youtube.com',
         url: 'https://youtube.com',
         topProduct: 'Product C',
         visits: 1200,
@@ -66,7 +66,7 @@ const trafficSources = [
         conversionRate: 15,
     },
     {
-        title: 'LinkedIn',
+        title: 'LinkedIn.com',
         url: 'https://linkedin.com',
         topProduct: 'Product C',
         visits: 1200,
@@ -79,7 +79,7 @@ export default function TrafficSourceSection() {
         // Make this a desktop card when desktop
         <div className="w-full h-fit flex flex-col gap-y-[16px] px-[8px] self-stretch">
             <H2>Traffic Sources</H2>
-            <div className="w-full h-fit flex flex-row overflow-x-auto whitespace-nowrap hide-scrollbar gap-x-[8px]">
+            <div className="w-full h-fit flex flex-row overflow-x-auto whitespace-nowrap hide-scrollbar gap-x-[16px]">
                 {trafficSources.map((source, index) => (
                 <TrafficSourceItem
                     key={index} // Use a unique key for each item
