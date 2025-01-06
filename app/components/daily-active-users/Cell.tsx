@@ -18,7 +18,7 @@ const levelColors = [
 export default function Cell({ level }: CellProps) {
   return (
     <motion.div className={cn(
-        "w-[8px] h-[8px] rounded-sm",
+        "w-[8px] h-[8px] rounded-[1px]",
         levelColors[level]
       )}
       initial={{ opacity: 0 }}

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import MobileCard from '../unviersal/MobileCard';
+import Card from '../unviersal/Card';
 import H3Number from '../unviersal/H3Number';
 import H2Number from '../unviersal/H2Number';
 import { calculateCashFlow } from '@/lib/utils';
@@ -14,7 +14,7 @@ export default function CashFlowCard() {
   useEffect(() => {
     const interval = setInterval(() => {
       const randomRevenueChange = Math.random() * 50000 - 25000;
-      const randomExpensesChange = Math.random() * 50000 - 25000;
+      const randomExpensesChange = Math.random() * -50000 - 25000;
       const newRevenue = revenue + randomRevenueChange;
       const newExpenses = expenses + randomExpensesChange;
       setRevenue(newRevenue);
@@ -27,16 +27,16 @@ export default function CashFlowCard() {
   
 
     return (
-        <MobileCard title="Cash Flow" className="w-full h-fit p-[8px]">
-        <div className="w-full h-fit flex flex-col items-start">
-            <H2Number number={revenue} isCurrency={true} className="text-green" isPositive={true}/>
-            <H2Number number={expenses} isCurrency={true} className="text-negativeRed" isPositive={false}/>
+        <Card title="Cash Flow" className="w-full h-fit p-[8px]">
+          <div className="w-full h-fit flex flex-col items-start">
+              <H2Number number={revenue} isCurrency={true} className="text-green" isPositive={true}/>
+              <H2Number number={expenses} isCurrency={true} className="text-negativeRed" isPositive={false}/>
 
-            <div className="w-full h-fit flex flex-row gap-x-[4px] justify-start items-center leading-normal">
-            <span className="font-mono text-[16px] font-normal text-tertiaryFG tracking-[-0.02em]">Revenue:</span>
-            <H3Number number={cashFlow} className="text-secondaryFG" isCurrency={true} />
-            </div>
-        </div>
-        </MobileCard>
+              <div className="w-full h-fit flex flex-row gap-x-[4px] justify-start items-center leading-normal">
+              <span className="font-mono text-[16px] font-normal text-tertiaryFG tracking-[-0.02em]">Revenue:</span>
+              <H3Number number={cashFlow} className="text-secondaryFG" isCurrency={true} />
+              </div>
+          </div>
+        </Card>
     );
 }

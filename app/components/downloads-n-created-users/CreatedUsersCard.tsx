@@ -1,13 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import MobileCard from '../unviersal/MobileCard';
-import Icon from '../unviersal/Icon';
+import Card from '../unviersal/Card';
 import H1Number from '../unviersal/H1Number';
 import ChangeTicker from '../unviersal/ChangeTicker';
 
 
 export default function CreatedUsersCard() {
+
+  //Test data function
   const [users, setUsers] = useState(4000);
   const [change, setChange] = useState(0);
 
@@ -22,12 +23,11 @@ export default function CreatedUsersCard() {
   }, []);
 
   return (
-    // Replace MobileCard with the Responsive Card
-    <MobileCard title="Created Users" className="w-full h-fit p-[8px]">
+    <Card title="Created Users" className="w-full h-fit p-[8px]">
       <div className="w-full h-fit flex flex-col items-start">
         <H1Number number={users}/>
         <ChangeTicker number={change} timeframe="Since last year" isPositive={change >= 0} />
       </div>
-    </MobileCard>
+    </Card>
   );
 }

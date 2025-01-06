@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`flex flex-col justify-start items-center ${GeistSans.variable} ${GeistMono.variable} bg-primaryBG py-[32px] gap-y-[24px] px-[8px]`}>
         {children}
         <footer className="w-full h-fit justify-start items-center px-[8px]">
-          <span className="text-tertiaryFG text-start text-[16px] font-light tracking-[-0.02em] self-stretch">© 2024 Stratus Ventures. All rights Reserved</span>
+          <span className="text-tertiaryFG text-start text-[14px] font-light tracking-[-0.02em] self-stretch">© 2024 Stratus Ventures. All rights Reserved</span>
         </footer>
       </body>
     </html>

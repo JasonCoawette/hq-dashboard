@@ -40,8 +40,8 @@ const config = {
         cellMiddle: "rgba(67, 230, 96, 0.32)",
         cellMiddleHigh: "rgba(67, 230, 96, 0.64)",
         cellHigh: "#43E660",
-        positiveGreenBG: "rgba(67, 230, 96, 0.32)",
-        negativeRedBG: "rgba(230, 67, 70, 0.32)",
+        greenBG: "rgba(67, 230, 96, 0.32)",
+        redBG: "rgba(230, 67, 70, 0.32)",
       }
     },
   },
