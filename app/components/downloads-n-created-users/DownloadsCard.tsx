@@ -22,7 +22,7 @@ export default function DownloadsCard() {
   }, []);
 
   return (
-    <MobileCard title="Downloads" icon={<Icon name="downloads" />} className="w-full h-fit p-[8px]">
+    <MobileCard title="Downloads" className="w-full h-fit p-[8px]">
       <div className="w-full flex flex-col items-start">
         <H1Number number={downloads}/>
         <ChangeTicker number={change} timeframe="Today so far" isPositive={change >= 0} />
