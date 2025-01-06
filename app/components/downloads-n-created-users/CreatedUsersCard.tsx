@@ -23,7 +23,7 @@ export default function CreatedUsersCard() {
 
   return (
     // Replace MobileCard with the Responsive Card
-    <MobileCard title="Created Users" icon={<Icon name="users" />} className="w-full h-fit p-[8px]">
+    <MobileCard title="Created Users" className="w-full h-fit p-[8px]">
       <div className="w-full h-fit flex flex-col items-start">
         <H1Number number={users}/>
         <ChangeTicker number={change} timeframe="Since last year" isPositive={change >= 0} />

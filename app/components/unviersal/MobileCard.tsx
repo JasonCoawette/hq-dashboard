@@ -5,12 +5,12 @@ import H2 from "./H2";
 
 type CardProps = {
   title: string;
-  icon?: ReactNode;
   className?: string;
   children: ReactNode;
+  rightContent?: ReactNode;
 };
 
-export default function Card({ title, icon, className, children }: CardProps) {
+export default function Card({ title, className, children, rightContent }: CardProps) {
   return (
     <div 
       className={cn(
@@ -18,8 +18,11 @@ export default function Card({ title, icon, className, children }: CardProps) {
         className
       )}
     >
-        <H2 className="w-full">{title}</H2>
-        <div className="flex flex-col justify-center items-center self-stretch px-[16px] pt-[8px] pb-[16px] rounded-[8px] bg-secondaryBG">
+        <div className="w-full h-fit flex flex-row justify-between items-center">
+            <H2 className="w-full">{title}</H2>
+            {rightContent}
+        </div>
+        <div className="flex flex-col justify-center items-center self-stretch p-[16px] rounded-[8px] bg-secondaryBG">
           {children}        
         </div>
     </div>
