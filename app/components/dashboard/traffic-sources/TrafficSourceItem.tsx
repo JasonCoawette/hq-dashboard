@@ -1,4 +1,3 @@
-import Icon from "../unviersal/Icon";
 import Link from "next/link";
 import { cn } from "@/utils/utils";
 import H3Number from "../unviersal/H3Number";
@@ -29,7 +28,6 @@ export default function TrafficSourceItem({title, url, topProduct, visits, conve
             <div className="w-full h-fit flex flex-row items-center gap-x-[16px]">
                 {/* Visits */}
                 <div className="w-fit h-fit flex flex-row items-center gap-x-[4px]">
-                    <Icon name="visits"/>
                     <div className="flex flex-col items-start pt-[2px]">
                         <H3Number number={visits} className="text-[14px] text-secondaryFG" />
                     </div>
@@ -37,7 +35,6 @@ export default function TrafficSourceItem({title, url, topProduct, visits, conve
 
                 {/* Conversion Rate */}
                 <div className="w-fit h-fit flex flex-row items-center gap-x-[4px]">
-                    <Icon name="percent"/>
                     <div className="flex flex-col items-start pt-[2px]">
                         <H3Number number={conversionRate} className="text-[14px] text-secondaryFG" />
                     </div>

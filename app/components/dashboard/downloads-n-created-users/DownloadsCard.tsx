@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Card from '../unviersal/Card';
-import Icon from '../unviersal/Icon';
 import H1Number from '../unviersal/H1Number';
 import ChangeTicker from '../unviersal/ChangeTicker';
 
