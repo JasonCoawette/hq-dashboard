@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Card from '../unviersal/Card';
 import H3Number from '../unviersal/H3Number';
 import H2Number from '../unviersal/H2Number';
-import { calculateCashFlow } from '@/lib/utils';
+import { calculateCashFlow } from '@/utils/utils';
 
 export default function CashFlowCard() {
   const [revenue, setRevenue] = useState(100000.00);

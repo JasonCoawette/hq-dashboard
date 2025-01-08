@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 .H1 {
-    @apply w-full h-fit font-sans font-medium text-center text-primaryFG text-[36px] sm:text-[36px] md:text-[48px] lg:text-[64px] tracking-[-0.06em];
+    @apply w-full h-fit subpixel-antialiased font-sans font-medium text-center text-primaryFG text-[36px] sm:text-[36px] md:text-[48px] lg:text-[64px] tracking-[-0.06em];
 }
 
 .Subtitle {
-    @apply w-full h-fit font-sans font-normal text-center text-tertiaryFG text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] tracking-[-0.02em];
+    @apply w-full h-fit subpixel-antialiased font-sans font-normal text-center text-tertiaryFG text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] tracking-[-0.02em];
 }
 
 .ButtonText {
-    @apply w-fit h-fit font-sans font-medium text-center text-primaryFGInverted text-[14px] sm:text-[14px] md:text-[16px] lg:text-[16px] tracking-[-0.02em];
+    @apply w-fit h-fit subpixel-antialiased font-sans font-medium text-center text-primaryFGInverted text-[14px] sm:text-[14px] md:text-[16px] lg:text-[16px] tracking-[-0.02em];
 }
 
 .TagText {
-    @apply w-fit h-fit font-mono uppercase font-normal text-center text-primaryFG text-[16px] sm:text-[16px] md:text-[18px] lg:text-[24px] tracking-[0.01em];
+    @apply w-fit h-fit subpixel-antialiased font-mono uppercase font-normal text-center text-primaryFG text-[16px] sm:text-[16px] md:text-[18px] lg:text-[24px] tracking-[0.01em];
 }

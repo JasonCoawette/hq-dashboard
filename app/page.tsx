@@ -1,12 +1,16 @@
 import Image from "next/image";
 import Button from "./components/global/Button";
 import DecryptingText from "./components/landing/EncryptedText";
+import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
+
+//TODO figure out how to make the page not scrollable
+//TODO make the phone image responsive
 
 export default function LandingPage() {
     return (
         <section className="
-            w-full h-fit 
-            flex flex-col 
+            w-full h-full
+            flex flex-col
             justify-center items-center
         ">
 
@@ -54,23 +58,23 @@ export default function LandingPage() {
                     </div>
 
                     {/* Button */}
-                    <Button label="Contact us" />
+                    <Button label="Contact us" className="px-[72px] py-[12px] rounded-[8px]" />
 
                 </div>
 
                 {/* Stats Cards */}
+                <GlassStatCardGroup />
 
             </div>
 
             {/* Absolute Phone Graphic */}
-            {/* Play around with this more to make it responsive properly */}
             <img 
                 src="/images/phone.png" 
                 alt="Phone" 
                 className="
                     absolute 
-                    top-[96px] sm:top-[96px] md:top-[80px] lg:top-[64px]
-                    w-[360px] md:w-[524px] lg:w-[880px] min-w-[340px]
+                    top-[96px] sm:top-[96px] md:top-[80px] lg:top-[40px]
+                    w-[360px] md:w-[524px] lg:w-[728px] min-w-[340px]
                     z-0
                 " 
             />

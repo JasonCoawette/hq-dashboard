@@ -1,5 +1,5 @@
 import NumberFlow from '@number-flow/react';
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 
 type H2NumberProps = {
   number: number;
@@ -12,7 +12,7 @@ export default function H2Number({ number, className, isCurrency = false, isPosi
   const sign = isPositive ? '+' : '-';
 
   return (
-    <div className={cn(`font-sans text-[40px] font-normal leading-normal tracking-[-0.02em] text-primaryFG`, className)}>
+    <div className={cn(`font-sans text-[40px] font-normal leading-none tracking-[-0.02em] text-primaryFG`, className)}>
       {sign}
       <NumberFlow
         value={Math.abs(number)}

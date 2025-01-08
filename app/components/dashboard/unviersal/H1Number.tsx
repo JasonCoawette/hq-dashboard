@@ -1,5 +1,5 @@
 import NumberFlow from '@number-flow/react'
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils/utils'
 
 export default function H1Number({ number, color = 'text-primaryFG', className }: { number: number; color?: string; className?: string }) {
   return (

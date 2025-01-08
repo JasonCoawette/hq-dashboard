@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import { ReactNode } from "react";
 import H2 from "./H2";
 

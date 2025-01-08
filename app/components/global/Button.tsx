@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import { motion } from "motion/react";
 
 type ButtonProps = {
@@ -17,16 +17,10 @@ export default function Button({label, className }: ButtonProps) {
             className={cn(`
                 w-fit h-fit
                 flex 
-                px-[72px] py-[12px]
                 items-center justify-center
                 ButtonText
-                rounded-[8px]
                 bg-buttonBG
             `, className)}
-            transition={{
-                ease: "easeInOut",
-                duration: 0.2,
-            }}
             whileHover={{ 
                 scale: 1.02, 
                 backgroundColor: "rgba(255, 255, 255, 1)",

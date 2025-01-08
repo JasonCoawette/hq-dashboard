@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Logo from "./Logo";
 import IconButton from "./IconButton";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 
 export default function TopBar() {
     const [hasScrolled, setHasScrolled] = useState(false);

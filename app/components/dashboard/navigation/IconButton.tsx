@@ -1,7 +1,7 @@
 'use client';
 
 import Icon from "@/app/components/dashboard/unviersal/Icon";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 
 type IconButtonProps = {
   title: string;

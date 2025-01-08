@@ -28,13 +28,14 @@ export default function RootLayout({
       <html lang="en" className={GeistSans.className}>
           <head>
             <title>{metadata.title}</title>
+            <link rel="icon" href="/favicon.ico" />
             <meta name="description" content={metadata.description} />
             <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
           </head>
           <body className={`
             w-full h-screen min-w-[360px]
             flex flex-col 
-            justify-between items-center
+            justify-between items-center // Might have to change this between in the future
             bg-backgroundGradient
             ${GeistSans.variable} ${GeistMono.variable}
           `}>
