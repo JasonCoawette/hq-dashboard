@@ -9,9 +9,12 @@ export default function GlassStatCardGroup() {
             gap-[16px] sm:gap-[16px] md:gap-[24px] lg:gap-[32px]
             md:flex-row
         ">
+
+            {/* Set Cards */}
             <GlassStatCard label="Active users" value={0} isCurrency={false}/>
             <GlassStatCard label="Annual revenue" value={0} isCurrency={true}/>
             <GlassStatCard label="Total downloads" value={0} isCurrency={false}/>
+            
         </div>
     );
 }

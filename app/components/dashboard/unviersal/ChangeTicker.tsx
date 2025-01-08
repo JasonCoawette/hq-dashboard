@@ -1,4 +1,3 @@
-import Icon from './Icon';
 import H3 from './H3';
 import H3Number from './H3Number';
 
@@ -15,7 +14,6 @@ export default function ChangeTicker({ number, timeframe, isPositive }: ChangeTi
   return (
     <div className="flex flex-row items-center gap-x-[6px] self-stretch">
         <div className="flex flex-row items-center gap-x-[2px]">
-          <Icon name={iconName}/>
           <H3Number number={number} className={color}/>
         </div>
         <H3 className='text-secondaryFG'>{timeframe}</H3>
