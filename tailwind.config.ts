@@ -14,7 +14,9 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        'sm': '360px',
+        'md': '768px',
+        'lg': '1280px',
       },
     },
     extend: {
@@ -22,14 +24,19 @@ const config = {
         sans: ["var(--font-geist-sans)", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
       },
+      backgroundImage: {
+        backgroundGradient: 'var(--Background-Gradient, linear-gradient(180deg, #161616 0%, #080808 100%))',
+      },
       colors: {
         primaryFG: "#FFFFFF",
+        primaryFGInverted: "#000000",
         secondaryFG: "rgba(255, 255, 255, 0.8)",
         tertiaryFG: "rgba(255, 255, 255, 0.48)",
         stroke: "rgba(255, 255, 255, 0.16)",
         primaryBG: "#080808",
         secondaryBG: "#161616",
         tertiaryBG: "#242424",
+        buttonBG: "#DDDDDD",
         icon: "#484848",
         pink: "#EE00FF",
         green: "#43E660",
@@ -42,6 +49,7 @@ const config = {
         cellHigh: "#43E660",
         greenBG: "rgba(67, 230, 96, 0.32)",
         redBG: "rgba(230, 67, 70, 0.32)",
+        glass: "rgba(8, 8, 8, 0.16)",
       }
     },
   },
