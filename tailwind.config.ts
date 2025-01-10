@@ -49,7 +49,7 @@ const config = {
         cellHigh: "#43E660",
         greenBG: "rgba(67, 230, 96, 0.32)",
         redBG: "rgba(230, 67, 70, 0.32)",
-        glassCardBG: "rgba(248, 248, 248, 0.16)",
+        glassCardBG: "rgba(248, 248, 248, 0.08)",
       },
       boxShadow: {
         glassCardShadow: '0px 2px 4px 0px rgba(255, 255, 255, 0.16) inset, 0px 8px 8px 0px rgba(0, 0, 0, 0.32)',

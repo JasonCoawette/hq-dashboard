@@ -6,14 +6,15 @@ import { motion } from "motion/react";
 type ButtonProps = {
     label: string;
     className?: string;
+    onClick?: () => void;
 }
 
 // TODO: Add an onclick event prop to the button
 
-export default function Button({label, className }: ButtonProps) {
+export default function Button({label, className, onClick}: ButtonProps) {
     return (
         <motion.button
-            onClick={() => {console.log("clicked")}}
+            onClick={onClick}
             className={cn(`
                 w-fit h-fit
                 flex 

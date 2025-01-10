@@ -1,6 +1,8 @@
-import Image from "next/image";
+'use client';
+
 import Button from "./components/global/Button";
-import DecryptingText from "./components/landing/EncryptedText";
+import { motion } from "motion/react";
+import DecryptingText from "./components/landing/DecryptingText";
 import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
 
 //TODO figure out how to make the page not scrollable
@@ -9,14 +11,14 @@ import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
 export default function LandingPage() {
     return (
         <section className="
-            w-full h-full
+            w-full h-[100vh] overflow-hidden
             flex flex-col
             justify-center items-center
         ">
 
             {/* Container */}
             <div className="
-                w-full h-fit sm:max-w-[360px] md:max-w-none mx-auto
+                w-full h-fit max-w-[360px] sm:max-w-[360px] md:max-w-none mx-auto
                 pt-[104px] px-[40px] pb-[40px]
                 flex flex-col
                 items-center
@@ -58,26 +60,49 @@ export default function LandingPage() {
                     </div>
 
                     {/* Button */}
-                    <Button label="Contact us" className="px-[72px] py-[12px] rounded-[8px]" />
+                    <Button label="Contact us" className="
+                        px-[72px] py-[12px] rounded-[8px]
+                        hover:bg-buttonBG
+                    "/>
 
                 </div>
 
                 {/* Stats Cards */}
-                <GlassStatCardGroup />
+                <GlassStatCardGroup className="max-w-[340px] sm:max-w-none" />
 
             </div>
 
             {/* Absolute Phone Graphic */}
-            <img 
-                src="/images/phone.png" 
-                alt="Phone" 
+            <motion.div 
                 className="
-                    absolute 
-                    top-[96px] sm:top-[96px] md:top-[80px] lg:top-[40px]
-                    w-[360px] md:w-[524px] lg:w-[728px] min-w-[340px]
+                    absolute
+                    w-full h-fit
+                    flex justify-center
+                    top-0
+                    pointer-events-none
                     z-0
-                " 
-            />
+                "
+                initial={{ y: '100%' }}
+                animate={{ y: '0%' }}
+                transition={{
+                    type: 'spring',
+                    stiffness: 100,
+                    damping: 20,
+                    mass: 1
+                }}
+            >
+                <img 
+                    src="/images/phone.png" 
+                    alt="Phone" 
+                    className="
+                        w-[360px] sm:w-[360px] md:[564] lg:w-[700px]
+                        min-w-[360px]
+                        object-contain
+                        transition-all duration-300 ease-in-out
+                    "
+                />
+
+            </motion.div>
 
         </section>
     ); 

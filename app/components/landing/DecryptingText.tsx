@@ -2,14 +2,14 @@
 
 import useEncryptText from '@/app/hooks/useEncryptText';
 
+// can we make sure this loads with the page so it doesnt shift the text wrapper up
+
 type DecryptingTextProps = {
     text: string;
 };
 
-// TODO: make this a little better more characters a typing animation smooth with framer motion and such
-
 export default function DecryptingText({ text }: DecryptingTextProps) {
-    const displayText = useEncryptText(text);
+    const { displayText } = useEncryptText(text);
     
     return (
         <h4 className="
