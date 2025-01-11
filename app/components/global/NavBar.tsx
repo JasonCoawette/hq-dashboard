@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 export default function NavBar() {    
     return (
         <nav className="
-            w-full h-fit
+            w-full h-fit max-w-[1400px] mx-auto
             flex flex-row
             sticky
             px-[24px] pt-[32px] pb-[16px]
