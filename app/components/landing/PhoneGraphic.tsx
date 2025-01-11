@@ -10,7 +10,7 @@ export default function PhoneGraphic() {
                     absolute
                     w-full h-fit
                     flex justify-center
-                    top-0
+                    top-[64px] sm:top-[64px] md:top-0
                     pointer-events-none
                     z-0
                 "
@@ -27,7 +27,7 @@ export default function PhoneGraphic() {
                     src="/images/phone.png" 
                     alt="Phone" 
                     className="
-                        w-360px sm:max-w-[464px] md:max-w-[564px] lg:max-w-[732px]
+                        w-380px sm:max-w-[464px] md:max-w-[564px] lg:max-w-[732px]
                         max-w-[464px]
                         min-w-[360px]
                         object-contain

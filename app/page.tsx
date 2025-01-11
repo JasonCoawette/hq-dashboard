@@ -9,7 +9,7 @@ import PhoneGraphic from "./components/landing/PhoneGraphic";
 export default function LandingPage() {
     return (
         <section className="
-            w-full h-[100vh] overflow-hidden
+            w-full h-[100vh]
             flex flex-col
             justify-center items-center
         ">
@@ -39,7 +39,7 @@ export default function LandingPage() {
                         w-full h-fit
                         flex flex-col
                         justify-center items-center
-                        gap-[16px]
+                        gap-[8px]
                     ">
 
                         {/* Encrypted Text Heading component */}
