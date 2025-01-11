@@ -1,5 +1,5 @@
-import { GeistSans } from 'geist/font/sans';
-import { GeistMono } from 'geist/font/mono';
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./styles/globals.css";
 
 
@@ -33,7 +33,7 @@ export default function RootLayout({
             <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
           </head>
           <body className={`
-            w-full h-screen min-w-[360px]
+            w-full h-screen
             flex flex-col 
             justify-between items-center // Might have to change this between in the future
             bg-backgroundGradient

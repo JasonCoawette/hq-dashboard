@@ -8,7 +8,7 @@ type GlassStatCardGroupProps = {
 export default function GlassStatCardGroup({ className }: GlassStatCardGroupProps) {
     return (
         <div className={cn(`
-            w-full sm:w-full md:w-fit h-fit
+            w-full md:w-fit h-fit
             flex flex-col sm:flex-col md:flex-row
             items-center justify-center 
             gap-[16px] sm:gap-[16px] md:gap-[24px] lg:gap-[32px]

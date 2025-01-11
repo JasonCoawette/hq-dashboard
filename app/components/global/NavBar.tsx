@@ -1,12 +1,28 @@
+"use client";
+
+import Logo from "../global/Logo";
+import { LogIn } from "lucide-react";
+import { motion } from "motion/react";
+
 export default function NavBar() {
+    
     return (
-        <div className="
+        <nav className="
             w-full h-fit
-            flex
-            justify-center items-center
+            flex flex-row
+            sticky
+            px-[24px] pt-[32px] pb-[16px]
+            justify-between items-center
+            self-stretch
             z-10
         ">
-            <h1>Hello World</h1>
-        </div>
+            {/* Logo */}
+            <Logo />
+            
+            {/* LogIn or LogOut Icon */}
+            <motion.div>
+                <LogIn size={28} color="white" />
+            </motion.div>
+        </nav>
     );
 }

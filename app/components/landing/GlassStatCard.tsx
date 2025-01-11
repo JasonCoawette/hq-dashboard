@@ -1,5 +1,5 @@
 import { cn } from "@/utils/utils";
-import NumberFlow from '@number-flow/react';
+import NumberFlow from "@number-flow/react";
 
 type GlassStatCardProps = {
     label: string;

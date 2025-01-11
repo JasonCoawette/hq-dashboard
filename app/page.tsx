@@ -1,9 +1,7 @@
-'use client';
-
 import Button from "./components/global/Button";
-import { motion } from "motion/react";
 import DecryptingText from "./components/landing/DecryptingText";
 import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
+import PhoneGraphic from "./components/landing/PhoneGraphic";
 
 //TODO figure out how to make the page not scrollable
 //TODO make the phone image responsive
@@ -72,37 +70,8 @@ export default function LandingPage() {
 
             </div>
 
-            {/* Absolute Phone Graphic */}
-            <motion.div 
-                className="
-                    absolute
-                    w-full h-fit
-                    flex justify-center
-                    top-0
-                    pointer-events-none
-                    z-0
-                "
-                initial={{ y: '100%' }}
-                animate={{ y: '0%' }}
-                transition={{
-                    type: 'spring',
-                    stiffness: 100,
-                    damping: 20,
-                    mass: 1
-                }}
-            >
-                <img 
-                    src="/images/phone.png" 
-                    alt="Phone" 
-                    className="
-                        w-[360px] sm:w-[360px] md:[564] lg:w-[700px]
-                        min-w-[360px]
-                        object-contain
-                        transition-all duration-300 ease-in-out
-                    "
-                />
-
-            </motion.div>
+            {/* Phone Graphic */}
+            <PhoneGraphic />
 
         </section>
     ); 
