@@ -4,8 +4,7 @@ import Logo from "../global/Logo";
 import { LogIn } from "lucide-react";
 import { motion } from "motion/react";
 
-export default function NavBar() {
-    
+export default function NavBar() {    
     return (
         <nav className="
             w-full h-fit
@@ -20,9 +19,7 @@ export default function NavBar() {
             <Logo />
             
             {/* LogIn or LogOut Icon */}
-            <motion.div>
-                <LogIn size={28} color="white" />
-            </motion.div>
+            <LogIn size={28} color={"#FFFFFF"} />
         </nav>
     );
 }
