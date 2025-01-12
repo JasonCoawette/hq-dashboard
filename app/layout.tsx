@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
       <html lang="en" className={`
         ${GeistSans.className}
+        bg-primaryBG
       `}>
           <head>
             <title>{metadata.title}</title>
@@ -42,7 +43,7 @@ export default function RootLayout({
             ${GeistSans.variable} ${GeistMono.variable}
             bg-backgroundGradient
             overscroll-none
-            scrollbar-hide
+            scrollbar-none
           `}>
               <NavBar />
                 {children}

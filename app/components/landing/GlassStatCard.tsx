@@ -29,8 +29,8 @@ export default function GlassStatCard({ label, value, className, isCurrency = fa
                     currency: 'USD',
                     notation: 'compact',
                     compactDisplay: 'short',
-                    minimumFractionDigits: 1,
-                    maximumFractionDigits: 1
+                    minimumFractionDigits: isCurrency ? 1 : 0,
+                    maximumFractionDigits: isCurrency ? 1 : 0
                 }}
                 transformTiming={{ duration: 400, easing: 'linear' }}
                 spinTiming={{ duration: 400, easing: 'linear' }}

@@ -16,9 +16,9 @@ export default function GlassStatCardGroup({ className }: GlassStatCardGroupProp
         `, className)}>
 
             {/* Set Cards */}
-            <GlassStatCard label="Active users" value={0} isCurrency={false}/>
-            <GlassStatCard label="Annual revenue" value={0} isCurrency={true}/>
-            <GlassStatCard label="Total downloads" value={0} isCurrency={false}/>
+            <GlassStatCard label="Active users" value={900000} isCurrency={false}/>
+            <GlassStatCard label="Annual revenue" value={900000} isCurrency={true}/>
+            <GlassStatCard label="Total downloads" value={900000} isCurrency={false}/>
             
         </div>
     );
