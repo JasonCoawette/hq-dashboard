@@ -5,6 +5,7 @@ import "./styles/globals.css";
 
 import Footer from './components/global/Footer';
 import NavBar from './components/global/NavBar';
+import PhoneGraphic from "./components/landing/PhoneGraphic";
 
 
 const defaultUrl = process.env.VERCEL_URL
@@ -27,7 +28,6 @@ export default function RootLayout({
   return (
       <html lang="en" className={`
         ${GeistSans.className}
-        bg-backgroundGradient
       `}>
           <head>
             <title>{metadata.title}</title>
@@ -36,15 +36,21 @@ export default function RootLayout({
             <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
           </head>
           <body className={`
-            w-full h-screen
+            w-full h-fit
             flex flex-col 
             justify-between items-center 
             ${GeistSans.variable} ${GeistMono.variable}
-            overscroll-contain
+            bg-backgroundGradient
+            overscroll-none
           `}>
-            <NavBar />
-            {children}
-            <Footer />
+              <NavBar />
+              <main className="
+                w-full h-fit
+                flex flex-col
+              ">
+                {children}
+              </main>
+              <Footer />
           </body>
       </html>
   );

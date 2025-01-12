@@ -7,11 +7,13 @@ export default function PhoneGraphic() {
         <AnimatePresence>
             <motion.div 
                 className="
-                    absolute
+                    relative
                     w-full h-fit
-                    flex justify-center
-                    top-[64px] sm:top-[64px] md:top-0
+                    flex flex-col
+                    justify-start items-center
+                    px-[16px]
                     pointer-events-none
+                    box-shadow-phoneGraphicShadow
                     z-0
                 "
                 initial={{ y: '100%' }}
@@ -27,11 +29,9 @@ export default function PhoneGraphic() {
                     src="/images/phone.png" 
                     alt="Phone" 
                     className="
-                        w-380px sm:max-w-[464px] md:max-w-[564px] lg:max-w-[732px]
+                        w-full sm:max-w-[464px] md:max-w-[564px] lg:max-w-[664px]
                         max-w-[464px]
                         min-w-[360px]
-                        object-contain
-                        transition-all duration-300 ease-in-out
                     "
                 />
 

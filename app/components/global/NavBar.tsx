@@ -7,13 +7,15 @@ import { motion } from "motion/react";
 export default function NavBar() {    
     return (
         <nav className="
+            sticky top-0
             w-full h-fit max-w-[1400px] mx-auto
             flex flex-row
-            sticky
             px-[24px] pt-[32px] pb-[16px]
             justify-between items-center
-            self-stretch
-            z-10
+            bg-glass 
+            backdrop-blur-[32px]
+            box-shadow-navBarShadow
+            z-20
         ">
             {/* Logo */}
             <Logo />
