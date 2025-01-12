@@ -1,3 +1,4 @@
+import H1Animated from "./components/global/H1Animated";
 import NavButton from "./components/global/NavButton";
 import DecryptingText from "./components/landing/DecryptingText";
 import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
@@ -50,9 +51,7 @@ export default function LandingPage() {
                         <DecryptingText text="[STRATUS VENTURES]" />
                         
                         {/* H1 */}
-                        <h1 className="H1">
-                            We build IOS apps
-                        </h1>
+                        <H1Animated>We build IOS apps</H1Animated>
 
                         {/* Subtitle */}
                         <p className="Subtitle">
