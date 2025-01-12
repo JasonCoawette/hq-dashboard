@@ -1,4 +1,4 @@
-import Button from "./components/global/Button";
+import NavButton from "./components/global/NavButton";
 import DecryptingText from "./components/landing/DecryptingText";
 import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
 import PhoneGraphic from "./components/landing/PhoneGraphic";
@@ -62,7 +62,7 @@ export default function LandingPage() {
                     </div>
 
                     {/* Button */}
-                    <Button label="Contact us" className="
+                    <NavButton link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
                         px-[72px] py-[12px] rounded-[8px]
                         hover:bg-buttonBG
                     "/>

@@ -13,7 +13,7 @@ export default function NavBar() {
             px-[24px] pt-[32px] pb-[16px]
             justify-between items-center
             bg-glass 
-            backdrop-blur-[32px]
+            backdrop-blur-md
             box-shadow-navBarShadow
             z-20
         ">

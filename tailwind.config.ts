@@ -25,7 +25,7 @@ const config = {
         mono: ["var(--font-geist-mono)", "monospace"],
       },
       backgroundImage: {
-        backgroundGradient: 'var(--Background-Gradient, linear-gradient(180deg, #161616 0%, #080808 100%))',
+        backgroundGradient: 'var(--Background-Gradient, linear-gradient(180deg, #080808 0%, #161616 24%, #080808 100%))',
       },
       colors: {
         primaryFG: "#FFFFFF",

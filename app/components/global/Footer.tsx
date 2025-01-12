@@ -7,6 +7,7 @@ export default function Footer() {
             justify-center items-center
             self-stretch
             bg-glass
+            backdrop-blur-md
             z-10
         ">
             <p className="
