@@ -8,10 +8,10 @@ export default function PhoneGraphic() {
             <motion.div 
                 className="
                     relative
-                    w-full h-fit
+                    w-full h-fit md:h-[88vh] lg:h-[100vh]
                     flex flex-col
                     justify-start items-center
-                    px-[16px]
+                    px-[32px]
                     pointer-events-none
                     box-shadow-phoneGraphicShadow
                     z-0
@@ -29,9 +29,7 @@ export default function PhoneGraphic() {
                     src="/images/phone.png" 
                     alt="Phone" 
                     className="
-                        w-full sm:max-w-[464px] md:max-w-[564px] lg:max-w-[664px]
-                        max-w-[464px]
-                        min-w-[360px]
+                        w-full min-w-[360px] max-w-[400px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px]
                     "
                 />
 

@@ -42,14 +42,10 @@ export default function RootLayout({
             ${GeistSans.variable} ${GeistMono.variable}
             bg-backgroundGradient
             overscroll-none
+            scrollbar-hide
           `}>
               <NavBar />
-              <main className="
-                w-full h-fit
-                flex flex-col
-              ">
                 {children}
-              </main>
               <Footer />
           </body>
       </html>

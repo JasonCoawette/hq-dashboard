@@ -8,11 +8,12 @@ import PhoneGraphic from "./components/landing/PhoneGraphic";
 
 export default function LandingPage() {
     return (
-        <section className="
+        <main className="
             relative
             w-full h-fit
             flex flex-col
             justify-center items-center
+            px-[16px]
             overflow-hidden
         ">
 
@@ -20,10 +21,10 @@ export default function LandingPage() {
             <div className="
                 absolute
                 right-0 top-0 left-0 bottom-0
-                w-full h-full max-w-[360px] sm:max-w-[360px] md:max-w-none mx-auto
+                w-full h-full max-w-[340px] sm:max-w-[360px] md:max-w-none mx-auto
                 flex flex-col
                 items-center justify-start
-                pt-[116px]
+                px-[16px] pt-[116px] md:pt-[164px]
                 gap-[32px] sm:gap-[32px] md:gap-[48px] lg:gap-[64px]
                 z-10
             ">
@@ -76,6 +77,6 @@ export default function LandingPage() {
             {/* Phone Graphic */}
             <PhoneGraphic />
 
-        </section>
+        </main>
     ); 
 }

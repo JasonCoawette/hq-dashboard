@@ -3,9 +3,10 @@ export default function Footer() {
         <footer className="
             w-full h-fit
             flex
-            px-[24px] pt-[24px] pb-[32px]
+            px-[24px] pt-[32px] pb-[32px]
             justify-center items-center
             self-stretch
+            bg-glass
             z-10
         ">
             <p className="
