@@ -3,7 +3,7 @@
 import { cn } from "@/utils/utils";
 import { motion } from "motion/react";
 
-type ButtonProps = {
+type CTAProps = {
     link: string;
     label: string;
     className?: string;
@@ -12,7 +12,7 @@ type ButtonProps = {
     onClick?: () => void;
 }
 
-export default function Button({link, label, className, target, rel, onClick}: ButtonProps) {
+export default function CTA({link, label, className, target, rel, onClick}: CTAProps) {
     return (
         <motion.a
             href={link}

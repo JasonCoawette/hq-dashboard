@@ -1,5 +1,5 @@
-import AnimationWrapper from "./components/global/AnimationWrapper";
-import NavButton from "./components/global/NavButton";
+import AnimationWrapper from "./components/landing/AnimationWrapper";
+import CTA from "./components/landing/CTA";
 import DecryptingText from "./components/landing/DecryptingText";
 import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
 import PhoneGraphic from "./components/landing/PhoneGraphic";
@@ -49,7 +49,7 @@ export default function LandingPage() {
                     ">
 
                         {/* Encrypted Text Heading component */}
-    
+                        
                         <DecryptingText text="[STRATUS VENTURES]" />
     
                         
@@ -70,7 +70,7 @@ export default function LandingPage() {
 
                     {/* Button */}
 
-                    <NavButton link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
+                    <CTA link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
                         px-[72px] py-[12px] rounded-[8px]
                         hover:bg-buttonBG
                     "/>
@@ -79,7 +79,7 @@ export default function LandingPage() {
 
 
                 {/* Stats Cards */}
-                <GlassStatCardGroup className="max-w-[340px] sm:max-w-none" />
+                <GlassStatCardGroup className="max-w-[320px] sm:max-w-none" />
 
             </div>
 
