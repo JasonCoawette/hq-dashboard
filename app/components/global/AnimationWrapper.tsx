@@ -16,7 +16,7 @@ export default function AnimationWrapper({ className, children, delay = 0.4, ini
 
     return (
         <motion.div
-            className={cn("w-fit h-fit items-center justify-center", className)}
+            className={cn("w-full h-fit items-center justify-center", className)}
             initial={{ y: 16, opacity: 0, filter: "blur(16px)", ...initial }}
             animate={{ y: 0, opacity: 1, filter: "blur(0px)", ...animate }}
             transition={{ duration: 0.4, delay: delay, ease: "easeOut", ...transition }}

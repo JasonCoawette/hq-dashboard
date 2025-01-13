@@ -55,7 +55,7 @@ export default function LandingPage() {
                         
                         {/* H1 */}
                         <AnimationWrapper delay={0.4}>
-                            
+
                             <h1 className="H1">We build IOS apps</h1>
 
                         {/* Subtitle */}
@@ -79,9 +79,7 @@ export default function LandingPage() {
 
 
                 {/* Stats Cards */}
-                <AnimationWrapper delay={0.8}>
-                    <GlassStatCardGroup className="max-w-[340px] sm:max-w-none" />
-                </AnimationWrapper>
+                <GlassStatCardGroup className="max-w-[340px] sm:max-w-none" />
 
             </div>
 
