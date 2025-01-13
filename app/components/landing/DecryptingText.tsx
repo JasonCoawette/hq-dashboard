@@ -11,13 +11,17 @@ export default function DecryptingText({ text }: DecryptingTextProps) {
     const { displayText } = useEncryptText(text);
     const [isLoaded, setIsLoaded] = useState(false);
 
+    // Determine if the text is loaded
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoaded(true);
-        }, 0); 
+        }); 
 
         return () => clearTimeout(timer);
     }, []);
+
+    // Return the text
 
     return (
         <h4 className="TagText">

@@ -1,4 +1,4 @@
-import H1Animated from "./components/global/H1Animated";
+import AnimationWrapper from "./components/global/AnimationWrapper";
 import NavButton from "./components/global/NavButton";
 import DecryptingText from "./components/landing/DecryptingText";
 import GlassStatCardGroup from "./components/landing/GlassStatCardGroup";
@@ -31,6 +31,7 @@ export default function LandingPage() {
             ">
 
                 {/* Hero text and CTA */}
+
                 <div className="
                     w-full h-fit md:max-w-[376px] lg:max-w-[512px] mx-auto
                     flex flex-col
@@ -48,19 +49,27 @@ export default function LandingPage() {
                     ">
 
                         {/* Encrypted Text Heading component */}
+    
                         <DecryptingText text="[STRATUS VENTURES]" />
+    
                         
                         {/* H1 */}
-                        <H1Animated>We build IOS apps</H1Animated>
+                        <AnimationWrapper delay={0.4}>
+                            
+                            <h1 className="H1">We build IOS apps</h1>
 
                         {/* Subtitle */}
-                        <p className="Subtitle">
-                            Partner with our elite team that turns your idea into an App Store success story.
-                        </p>
+    
+                            <p className="Subtitle">
+                                Partner with our elite team that turns your idea into an App Store success story.
+                            </p>
+
+                        </AnimationWrapper>
 
                     </div>
 
                     {/* Button */}
+
                     <NavButton link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
                         px-[72px] py-[12px] rounded-[8px]
                         hover:bg-buttonBG
@@ -68,8 +77,11 @@ export default function LandingPage() {
 
                 </div>
 
+
                 {/* Stats Cards */}
-                <GlassStatCardGroup className="max-w-[340px] sm:max-w-none" />
+                <AnimationWrapper delay={0.8}>
+                    <GlassStatCardGroup className="max-w-[340px] sm:max-w-none" />
+                </AnimationWrapper>
 
             </div>
 
