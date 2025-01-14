@@ -70,7 +70,7 @@ export default function LandingPage() {
 
                     {/* Button */}
 
-                    <CTA link="https://cal.com/jason-coawette/stratus-vzentures" label="Contact us" className="
+                    <CTA link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
                         px-[72px] py-[12px] rounded-[8px]
                         hover:bg-buttonBG
                     "/>

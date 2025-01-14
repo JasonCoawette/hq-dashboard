@@ -20,17 +20,20 @@ export default function CTA({link, label, className, target, rel, onClick}: CTAP
             rel={rel}
             onClick={onClick}
             className={cn(`
-                w-fit h-fit
+                w-full h-fit
                 flex 
                 items-center justify-center
                 ButtonText
                 bg-buttonBG
             `, className)}
-            whileHover={{ 
-                scale: 1.02, 
+            whileHover={{
+                scale: 1.02,
                 backgroundColor: "rgba(255, 255, 255, 1)",
             }}
-            whileTap={{ scale: 0.98 }}
+            whileTap={{
+                scale: 0.98,
+                backgroundColor: "rgba(255, 255, 255, 1)",
+            }}
         >
             {label}
         </motion.a>
