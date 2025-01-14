@@ -1,9 +1,9 @@
 "use client";
 
 import Logo from "../global/Logo";
-import { LogIn } from "lucide-react";
 import { motion } from "motion/react";
 import useStickyNavBar from "@/app/hooks/useStickyNavBar";
+import IconButton from "./IconButton";
 export default function NavBar() {    
     const isSticky = useStickyNavBar();
 
@@ -39,7 +39,7 @@ export default function NavBar() {
                 <Logo />
                     
                 {/* LogIn or LogOut Icon */}
-                <LogIn size={28} color={"#FFFFFF"} />
+                <IconButton name="log-in"/>
 
             </div>
 

@@ -34,6 +34,10 @@ export default function CTA({link, label, className, target, rel, onClick}: CTAP
                 scale: 0.98,
                 backgroundColor: "rgba(255, 255, 255, 1)",
             }}
+            transition={{ 
+                duration: 0.2, 
+                ease: "easeOut" 
+            }}
         >
             {label}
         </motion.a>

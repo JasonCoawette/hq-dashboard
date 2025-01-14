@@ -1,7 +1,7 @@
 export default function Logo() {
     return (
         <a href="/" className="
-            w-full h-fit
+            w-fit h-fit
             justify-center items-center
             py-[2px]
         ">
