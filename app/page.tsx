@@ -85,7 +85,7 @@ export default function LandingPage() {
 
             {/* Phone Graphic */}
             <div className="relative w-full h-full flex justify-center items-center">
-                <div className="absolute inset-0 bg-phoneGraphicGradient z-10"></div>
+                <div className="absolute inset-0 md:bg-phoneGraphicGradient z-10"/>
                 <PhoneGraphic />
             </div>
 

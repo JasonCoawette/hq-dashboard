@@ -7,7 +7,7 @@ export default function Footer() {
             px-[24px] pt-[32px] pb-[32px]
             justify-center items-center
             self-stretch
-            bg-glass
+            bg-primaryBG
             z-1
         ">
             <p className="
