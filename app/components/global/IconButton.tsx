@@ -32,14 +32,24 @@ const IconButton: React.FC<IconButtonProps> = ({ name, onClick, className, iconC
 
   return (
     <motion.button
-      onClick={onClick}
-      className={`flex items-center justify-center p-2 rounded ${className}`}
-      whileHover={{ color: '#FFFFFF', scale: 1.04 }}
-      whileTap={{ scale: 0.96 }}
-      style={{ color: iconColor }}
-      title={title}
+        onClick={onClick}
+        className={`flex items-center justify-center p-2 rounded ${className}`}
+        whileHover={{
+            scale: 1.04,
+            color: '#FFFFFF'
+        }}
+        whileTap={{ 
+            scale: 0.96,
+            color: '#FFFFFF'
+        }}
+        transition={{ 
+            duration: 0.2, 
+            ease: "easeOut" 
+        }}
+        style={{ color: iconColor }}
+        title={title}
     >
-      <LucideIcon size={28} {...props} />
+        <LucideIcon size={28} {...props} />
     </motion.button>
   );
 };
