@@ -4,6 +4,8 @@ import Logo from "../global/Logo";
 import { motion } from "motion/react";
 import useStickyNavBar from "@/app/hooks/useStickyNavBar";
 import IconButton from "./IconButton";
+
+
 export default function NavBar() {    
     const isSticky = useStickyNavBar();
 
@@ -39,7 +41,7 @@ export default function NavBar() {
                 <Logo />
                     
                 {/* LogIn or LogOut Icon */}
-                <IconButton name="log-in"/>
+                <IconButton name="log-in" title="Log In" onClick={() => {console.log("Log In")}}/>
 
             </div>
 

@@ -24,9 +24,10 @@ interface IconButtonProps extends Omit<LucideProps, 'ref'> {
   onClick?: () => void;
   className?: string;
   iconColor?: string;
+  title?: string;
 }
 
-const IconButton: React.FC<IconButtonProps> = ({ name, onClick, className, iconColor = '#484848', ...props }) => {
+const IconButton: React.FC<IconButtonProps> = ({ name, onClick, className, iconColor = '#484848', title, ...props }) => {
   const LucideIcon = iconMap[name];
 
   return (
@@ -36,6 +37,7 @@ const IconButton: React.FC<IconButtonProps> = ({ name, onClick, className, iconC
       whileHover={{ color: '#FFFFFF', scale: 1.04 }}
       whileTap={{ scale: 0.96 }}
       style={{ color: iconColor }}
+      title={title}
     >
       <LucideIcon size={28} {...props} />
     </motion.button>
