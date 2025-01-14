@@ -27,13 +27,18 @@ interface IconButtonProps extends Omit<LucideProps, 'ref'> {
   title?: string;
 }
 
-const IconButton: React.FC<IconButtonProps> = ({ name, onClick, className, iconColor = '#484848', title, ...props }) => {
+const IconButton: React.FC<IconButtonProps> = ({ name, onClick, className, iconColor = "#7F7F7F", title, ...props }) => {
   const LucideIcon = iconMap[name];
 
   return (
     <motion.button
         onClick={onClick}
-        className={`flex items-center justify-center p-2 rounded ${className}`}
+        className={`
+            flex 
+            items-center justify-center 
+            p-[4px] rounded-[4px] 
+            ${className}
+        `}
         whileHover={{
             scale: 1.04,
             color: '#FFFFFF'

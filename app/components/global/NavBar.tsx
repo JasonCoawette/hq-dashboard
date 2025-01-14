@@ -4,10 +4,11 @@ import Logo from "../global/Logo";
 import { motion } from "motion/react";
 import useStickyNavBar from "@/app/hooks/useStickyNavBar";
 import IconButton from "./IconButton";
-
+import useAuth from "@/app/hooks/useAuth";
 
 export default function NavBar() {    
     const isSticky = useStickyNavBar();
+    const { isLoggedIn, logOut } = useAuth();
 
     return (
         <motion.nav 
@@ -30,7 +31,6 @@ export default function NavBar() {
                 ease: "easeOut",
             }}
         >
-             
             <div className="
                 w-full h-fit max-w-[1400px] mx-auto
                 flex flex-row
@@ -39,12 +39,41 @@ export default function NavBar() {
 
                 {/* Logo */}
                 <Logo />
-                    
-                {/* LogIn or LogOut Icon */}
-                <IconButton name="log-in" title="Log In" onClick={() => {console.log("Log In")}}/>
+                
+                {/* Button Wrapper */}
+                <div className="
+                    flex flex-row
+                    items-center justify-end
+                    gap-[8px]
+                ">
+
+                    {/* Settings and Log Out or Log In */}
+
+                    {isLoggedIn ? (
+                        <>
+                            <IconButton
+                                name="settings-2"
+                                title="Settings"
+                                onClick={() => console.log('Settings')}
+                            />
+                            <IconButton
+                                name="log-out"
+                                title="Log Out"
+                                onClick={logOut}
+                            />
+                        </>
+                    ) : (
+                        <IconButton
+                            name="log-in"
+                            title="Log In"
+                            onClick={() => console.log('Log In')}
+                        />
+                    )}
+
+                </div>
 
             </div>
-
+            
         </motion.nav>
     );
 }
