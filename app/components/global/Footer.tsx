@@ -1,14 +1,14 @@
 export default function Footer() {
     return (
         <footer className="
+            relative
             w-full h-fit
             flex
             px-[24px] pt-[32px] pb-[32px]
             justify-center items-center
             self-stretch
             bg-glass
-            backdrop-blur-sm
-            z-10
+            z-1
         ">
             <p className="
                 text-tertiaryFG text-center text-[14px]

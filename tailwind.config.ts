@@ -26,6 +26,7 @@ const config = {
       },
       backgroundImage: {
         backgroundGradient: 'var(--Background-Gradient, linear-gradient(180deg, #080808 0%, #161616 24%, #080808 100%))',
+        phoneGraphicGradient: 'radial-gradient(ellipse at bottom, transparent 60%, #080808 100%)',
       },
       colors: {
         primaryFG: "#FFFFFF",

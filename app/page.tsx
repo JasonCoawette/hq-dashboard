@@ -27,7 +27,7 @@ export default function LandingPage() {
                 items-center justify-start
                 px-[16px] pt-[116px] md:pt-[164px]
                 gap-[32px] sm:gap-[32px] md:gap-[48px] lg:gap-[64px]
-                z-10
+                z-20
             ">
 
                 {/* Hero text and CTA */}
@@ -56,7 +56,7 @@ export default function LandingPage() {
                         {/* H1 */}
                         <AnimationWrapper delay={0.4}>
 
-                            <h1 className="H1">We build IOS apps</h1>
+                            <h1 className="H1">We build iOS apps</h1>
 
                         {/* Subtitle */}
     
@@ -70,7 +70,7 @@ export default function LandingPage() {
 
                     {/* Button */}
 
-                    <CTA link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
+                    <CTA link="https://cal.com/jason-coawette/stratus-vzentures" label="Contact us" className="
                         px-[72px] py-[12px] rounded-[8px]
                         hover:bg-buttonBG
                     "/>
@@ -79,12 +79,15 @@ export default function LandingPage() {
 
 
                 {/* Stats Cards */}
-                <GlassStatCardGroup className="max-w-[320px] sm:max-w-none" />
+                <GlassStatCardGroup className="max-w-[264px] md:max-w-none" />
 
             </div>
 
             {/* Phone Graphic */}
-            <PhoneGraphic />
+            <div className="relative w-full h-full flex justify-center items-center">
+                <div className="absolute inset-0 bg-phoneGraphicGradient z-10"></div>
+                <PhoneGraphic />
+            </div>
 
         </main>
     ); 

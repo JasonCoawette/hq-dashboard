@@ -5,6 +5,8 @@ type GlassStatCardGroupProps = {
     className?: string
 }
 
+//TODO figure out how to make the numbers count up to where they are on page load.
+
 export default function GlassStatCardGroup({ className }: GlassStatCardGroupProps) {
     return (
         <div className={cn(`

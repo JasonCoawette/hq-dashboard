@@ -3,25 +3,46 @@
 import Logo from "../global/Logo";
 import { LogIn } from "lucide-react";
 import { motion } from "motion/react";
-
+import useStickyNavBar from "@/app/hooks/useStickyNavBar";
 export default function NavBar() {    
+    const isSticky = useStickyNavBar();
+
     return (
-        <nav className="
-            sticky top-0
-            w-full h-fit max-w-[1400px] mx-auto
-            flex flex-row
-            px-[24px] pt-[32px] pb-[16px]
-            justify-between items-center
-            bg-glass 
-            backdrop-blur-md
-            box-shadow-navBarShadow
-            z-20
-        ">
-            {/* Logo */}
-            <Logo />
-            
-            {/* LogIn or LogOut Icon */}
-            <LogIn size={28} color={"#FFFFFF"} />
-        </nav>
+        <motion.nav 
+            className="
+                sticky top-0
+                w-full h-fit
+                flex flex-row
+                px-[24px] pt-[32px] pb-[16px]
+                justify-between items-center
+                bg-glass 
+                backdrop-blur-md
+                box-shadow-navBarShadow
+                z-30
+            "
+            animate={{
+                borderBottom: isSticky ? '1px solid rgba(255, 255, 255, 0.16)' : '0px solid rgba(255, 255, 255, 0)',
+            }}
+            transition={{
+                duration: 0.2,
+                ease: "easeOut",
+            }}
+        >
+             
+            <div className="
+                w-full h-fit max-w-[1400px] mx-auto
+                flex flex-row
+                justify-between items-center
+            ">
+
+                {/* Logo */}
+                <Logo />
+                    
+                {/* LogIn or LogOut Icon */}
+                <LogIn size={28} color={"#FFFFFF"} />
+
+            </div>
+
+        </motion.nav>
     );
 }
