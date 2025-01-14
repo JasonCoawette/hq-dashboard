@@ -5,7 +5,6 @@ import "./styles/globals.css";
 
 import Footer from './components/global/Footer';
 import NavBar from './components/global/NavBar/NavBar';
-import PhoneGraphic from "./components/landing/PhoneGraphic";
 
 
 const defaultUrl = process.env.VERCEL_URL
