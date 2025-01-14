@@ -1,10 +1,12 @@
 "use client";
 
-import Logo from "../global/Logo";
+import Logo from "../Logo";
 import { motion } from "motion/react";
 import useStickyNavBar from "@/app/hooks/useStickyNavBar";
-import IconButton from "./IconButton";
+import IconButton from "../IconButton";
 import useAuth from "@/app/hooks/useAuth";
+import { NavBarProvider, useNavBarContext } from './NavBarContext';
+
 
 export default function NavBar() {    
     const isSticky = useStickyNavBar();
@@ -73,7 +75,7 @@ export default function NavBar() {
                 </div>
 
             </div>
-            
+
         </motion.nav>
     );
 }
