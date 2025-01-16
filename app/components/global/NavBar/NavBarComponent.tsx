@@ -77,6 +77,7 @@ NavBarComponent.ButtonWrapper = function ButtonWrapper() {
                 <IconButton
                     name="log-in"
                     title="Log In"
+                    href="/pages/auth/login"
                     onClick={() => console.log('Log In')}
                 />
             )}

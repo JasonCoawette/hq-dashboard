@@ -10,6 +10,19 @@ const config = {
   ],
   prefix: "",
   theme: {
+    animation: {
+      nebula: "nebula 60s linear infinite",
+    },
+    keyframes: {
+      nebula: {
+        from: {
+          backgroundPosition: "50% 50%, 50% 50%",
+        },
+        to: {
+          backgroundPosition: "350% 50%, 350% 50%",
+        },
+      },
+    },
     container: {
       center: true,
       padding: "2rem",
