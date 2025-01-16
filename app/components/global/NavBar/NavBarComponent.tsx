@@ -77,10 +77,19 @@ NavBarComponent.ButtonWrapper = function ButtonWrapper() {
                 <IconButton
                     name="log-in"
                     title="Log In"
-                    href="./auth/login"
-                    onClick={() => console.log('Log In')}
+                    href="/pages/auth/login"
                 />
             )}
+        </div>
+    );
+};
+
+// SETTINGS OVERLAY
+// ---------------------------------------------------- //
+NavBarComponent.SettingsOverlay = function SettingsOverlay() {
+    return (
+        <div className="w-full h-full bg-primaryBG">
+            <h1>Settings</h1>
         </div>
     );
 };

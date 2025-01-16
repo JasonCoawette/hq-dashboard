@@ -4,8 +4,6 @@ import DecryptingText from "@/app/components/landing/DecryptingText";
 import GlassStatCardGroup from "@/app/components/landing/GlassStatCardGroup";
 import PhoneGraphic from "@/app/components/landing/PhoneGraphic";
 import LandingLayout from "@/app/pages/landing/layout";
-//TODO figure out how to make the page not scrollable
-//TODO make the phone image responsive
 
 export default function LandingPage() {
     return (
@@ -41,6 +39,7 @@ export default function LandingPage() {
                         gap-[24px] sm:gap-[24px] md:gap-[32px]
                     ">
 
+
                         {/* Text wrapper */}
                         <div className="
                             w-full h-full
@@ -53,9 +52,17 @@ export default function LandingPage() {
                             
                             <DecryptingText text="[STRATUS VENTURES]" />
         
+
+                            <AnimationWrapper 
+                                delay={0.4} 
+                                animationType="blurIn"
+                                className="w-full h-fit
+                                flex flex-col
+                                justify-center items-center
+                                gap-2
+                            ">
                             
                             {/* H1 */}
-                            <AnimationWrapper delay={0.4}>
 
                                 <h1 className="H1">We build iOS apps</h1>
 
@@ -67,14 +74,22 @@ export default function LandingPage() {
 
                             </AnimationWrapper>
 
+
                         </div>
 
-                        {/* Button */}
-
-                        <CTA link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
-                            px-[72px] py-[12px] rounded-[8px]
-                            hover:bg-buttonBG
-                        "/>
+                            {/* Button */}
+                            <AnimationWrapper 
+                                delay={0.6} 
+                                animationType="fadeInCenter"
+                                className="w-full h-fit
+                                flex flex-col
+                                justify-center items-center
+                            ">
+                                <CTA link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
+                                    px-[72px] py-[12px] rounded-[8px]
+                                    hover:bg-buttonBG
+                                "/>
+                            </AnimationWrapper>
 
                     </div>
 
