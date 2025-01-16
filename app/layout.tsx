@@ -3,9 +3,6 @@ import { GeistMono } from "geist/font/mono";
 import "./styles/globals.css";
 
 
-import Footer from './components/global/Footer';
-import NavBar from './components/global/NavBar/NavBar';
-
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -44,10 +41,8 @@ export default function RootLayout({
             overscroll-none
             scrollbar-none
           `}>
-              <NavBar />
-                {children}
-              <Footer />
+            {children}
           </body>
-      </html>
+      </html> 
   );
 }
