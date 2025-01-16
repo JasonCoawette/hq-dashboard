@@ -46,7 +46,7 @@ export default function AuthLayout({
         ">
 
             <img 
-                src="/images/" 
+                src="/images/spacegrain.png" 
                 alt="Background" 
                 className="
                 w-full h-full 
