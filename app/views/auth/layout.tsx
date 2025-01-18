@@ -8,14 +8,14 @@ export default function AuthLayout({
 }) {
 return (
     <main className="
-      w-full h-lvh 
-      flex flex-col
+      w-full h-lvh
+      flex flex-col lg:flex-row
       justify-center items-center
-      bg-primaryBG
+      bg-backgroundGradient
     ">
 
         <div className="
-          w-full h-fit
+          w-full h-full lg:max-w-lg
           flex flex-col
           justify-between items-center
         ">
@@ -31,11 +31,11 @@ return (
       
         {/* Left Image */}
         <div className="
-          w-full h-fit
-          flex flex-col
+          w-full h-full
+          flex-col
           justify-center items-center
           p-4 md:pl-0
-          invisible md:visible
+          hidden lg:flex
         ">
 
           <div className="

@@ -18,19 +18,19 @@ const TextField: React.FC<TextFieldProps> = ({
   onButtonClick,
 }) => {
   return (
-    <div className="w-full h-fit max-w-sm">
+    <div className="w-full h-fit">
       <div className={`flex items-center border ${error ? 'border-red-500' : 'border-stroke'} rounded p-2`}>  
-        <input
+        <input 
           type="text"
           placeholder={placeholder}
           value={value}
           onChange={onChange}
-          className="flex-grow bg-transparent outline-none text-white"
+          className="flex-grow bg-transparent outline-none text-primaryFG"
         />
         {buttonLabel && onButtonClick && (
           <button
             onClick={onButtonClick}
-            className="ml-2 bg-white text-black px-4 py-1 rounded"
+            className="ml-2 bg-primaryFG text-primaryFGInverted px-4 py-1 rounded"
           >
             {buttonLabel}
           </button>
