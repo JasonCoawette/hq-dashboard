@@ -35,7 +35,7 @@ export default function RootLayout({
           <body className={`
             w-full h-fit
             flex flex-col 
-            justify-between items-center 
+            justify-center items-center 
             ${GeistSans.variable} ${GeistMono.variable}
             bg-backgroundGradient
             overscroll-none

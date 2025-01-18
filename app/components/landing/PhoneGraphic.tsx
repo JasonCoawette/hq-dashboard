@@ -8,7 +8,7 @@ export default function PhoneGraphic() {
             <motion.div 
                 className="
                     relative
-                    w-full h-fit md:h-[88vh] md:portrait:h-[72vh] lg:h-[100vh]
+                    w-full h-fit md:h-[88vh] md:portrait:h-[88vh] lg:h-[100vh]
                     flex flex-col
                     justify-start items-center
                     px-[32px]

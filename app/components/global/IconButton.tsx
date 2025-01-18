@@ -40,11 +40,9 @@ const IconButton: React.FC<IconButtonProps> = ({ name, href, className, iconColo
         ${className}
       `}
       whileHover={{
-        scale: 1.04,
         color: '#FFFFFF'
       }}
       whileTap={{ 
-        scale: 0.96,
         color: '#FFFFFF'
       }}
       transition={{ 

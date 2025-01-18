@@ -4,7 +4,7 @@ import { cn } from "@/utils/utils";
 import { motion } from "motion/react";
 
 type CTAProps = {
-    link: string;
+    link?: string;
     label: string;
     className?: string;
     target?: "_blank" | "_self";

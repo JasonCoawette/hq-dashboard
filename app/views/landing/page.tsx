@@ -3,7 +3,7 @@ import CTA from "@/app/components/landing/CTA";
 import DecryptingText from "@/app/components/landing/DecryptingText";
 import GlassStatCardGroup from "@/app/components/landing/GlassStatCardGroup";
 import PhoneGraphic from "@/app/components/landing/PhoneGraphic";
-import LandingLayout from "@/app/pages/landing/layout";
+import LandingLayout from "@/app/views/landing/layout";
 
 export default function LandingPage() {
     return (
