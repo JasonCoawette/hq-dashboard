@@ -45,7 +45,7 @@ export default function LandingPage() {
                             w-full h-full
                             flex flex-col
                             justify-center items-center
-                            gap-[8px]
+                            gap-4
                         ">
 
                             {/* Encrypted Text Heading component */}
@@ -86,7 +86,7 @@ export default function LandingPage() {
                                 justify-center items-center
                             ">
                                 <CTA link="https://cal.com/jason-coawette/stratus-ventures" label="Contact us" className="
-                                    px-[72px] py-[12px] rounded-[8px]
+                                    px-[72px] py-[12px] rounded-[8px] max-w-56	
                                     hover:bg-buttonBG
                                 "/>
                             </AnimationWrapper>

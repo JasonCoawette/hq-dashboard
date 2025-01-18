@@ -56,11 +56,11 @@ export default function AuthPage() {
                         w-full h-fit
                         flex flex-col
                         justify-center items-center
-                        px-[72px] py-[12px] rounded-[8px]
+                        px-18 py-3 rounded-lg
                         hover:bg-buttonBG
                     " onClick={() => {console.log("Login button Clicked")}}/>
                 </form>
 
-            </div>
+            </div> 
     );
 }
